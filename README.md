@@ -9,6 +9,6 @@
 * [T2_func.ipynb](T0_begin.ipynb)： Python中的函数、lambda表达式；
 * [T3_class.ipynb](T0_begin.ipynb)： Python中的面向对象编程；
 * [T4_string.ipynb](T0_begin.ipynb)： Python中的字符串；
-* [T5_regex.ipynb](T0_begin.ipynb)： Python中的正则表达式；
+* [T5_regex.ipynb](T5_regex.ipynb)： Python中的正则表达式；
 * [T6_cutting.ipynb](T0_begin.ipynb)： Python中的分词；
 * [T7_files.ipynb](T0_begin.ipynb)： Python中的文件；
