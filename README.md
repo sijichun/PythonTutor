@@ -15,11 +15,17 @@
 ## 字符串专题
 
 * [T5_regex.ipynb](T5_regex.ipynb)： 正则表达式；
-* [T6_cutting.ipynb](T0_begin.ipynb)： 分词；
+* [T6_cutting.ipynb](T6_cutting.ipynb)： 分词；
 
 ## 数值计算专题
 
-* [T7_files.ipynb](T0_begin.ipynb)： Numpy+SciPy+Pandas+Matplotlib；
+* [T7_numpy_scipy_matplotlib.ipynb](T7_numpy_scipy_matplotlib.ipynb)： Numpy+SciPy+Pandas+Matplotlib；
 
+## 数据库
+
+* [T8_sql.ipynb](T8_sql.ipynb)： Python与数据库交互、sqlite简洁；
 
 ## 爬虫专题
+
+* [T9_html_bs_flask.ipynb](T9_html_flask.ipynb)： HTML语言简介、BeautifulSoup、flask；
+* [T10_requests_selenium.ipynb](T10_requests_selenium.ipynb)： HTML语言简介、BeautifulSoup、flask；

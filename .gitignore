@@ -2,3 +2,4 @@
 *.pyobj
 *.txt
 *.csv
+*.db
