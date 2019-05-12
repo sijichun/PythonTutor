@@ -1,1 +1,4 @@
 .ipynb_*
+*.pyobj
+*.txt
+*.csv
