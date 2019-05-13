@@ -23,9 +23,9 @@
 
 ## 数据库
 
-* [T8_sql.ipynb](T8_sql.ipynb)： Python与数据库交互、sqlite简洁；
+* [T8_sql.ipynb](T8_sql.ipynb)： Python与数据库交互、sqlite简介；
 
 ## 爬虫专题
 
-* [T9_html_bs_flask.ipynb](T9_html_flask.ipynb)： HTML语言简介、BeautifulSoup、flask；
-* [T10_requests_selenium.ipynb](T10_requests_selenium.ipynb)： HTML语言简介、BeautifulSoup、flask；
+* [T9_html_bs.ipynb](T9_html_flask.ipynb)： HTML语言简介、BeautifulSoup解析HTML；
+* [T10_flask_request_selenium.ipynb](T10_flask_request_selenium.ipynb)： 爬虫；
