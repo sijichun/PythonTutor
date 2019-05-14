@@ -27,5 +27,5 @@
 
 ## 爬虫专题
 
-* [T9_html_bs.ipynb](T9_html_flask.ipynb)： HTML语言简介、BeautifulSoup解析HTML；
+* [T9_html_bs.ipynb](T9_html_bs.ipynb)： HTML语言简介、BeautifulSoup解析HTML；
 * [T10_flask_request_selenium.ipynb](T10_flask_request_selenium.ipynb)： 爬虫；
