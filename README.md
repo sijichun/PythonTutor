@@ -19,7 +19,7 @@
 ## 数值计算专题
 
 * [T6_numpy_scipy_matplotlib.ipynb](T6_numpy_scipy_matplotlib.ipynb)：科学计算： Numpy+SciPy+Pandas+Matplotlib；
-* [T7_pandas.ipynb](T7_pandas.ipynbb)：数据管理：Pandas；
+* [T7_pandas.ipynb](T7_pandas.ipynb)：数据管理：Pandas；
 * [T8_scikit_learn.ipynb](T8_scikit_learn.ipynb)：机器学习：scikit-learn；
 * [T9_torch.ipynb](T9_torch.ipynb)：神经网络：PyTorch（待补充）；
 
