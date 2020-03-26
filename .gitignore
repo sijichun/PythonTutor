@@ -5,3 +5,4 @@
 *.db
 *.log
 T*.html
+.DS*
