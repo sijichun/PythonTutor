@@ -57,3 +57,17 @@
 * [T31_torch.ipynb](T31_torch.ipynb)：神经网络：PyTorch（待补充）；
 * [T32_text_analytics.ipynb](T32_text_analytics.ipynb)： 文本分析入门；
 * [T33_reinforcement.ipynb](T33_reinforcement.ipynb)： 增强学习（待补充）。
+
+## 常用数据集
+
+这里列举了一些数据源，练习时可以使用。
+
+* [https://archive.ics.uci.edu/ml/datasets.php](UCI 提供的机器学习数据集)；
+* [https://github.com/awesomedata/awesome-public-datasets](GitHub上的一个数据集汇总)
+* [https://registry.opendata.aws](亚马逊数据集)；
+* [https://msropendata.com](微软数据集)
+* [https://toolbox.google.com/datasetsearch](Google的数据集搜索)；
+* [https://www.kaggle.com/datasets](Kaggle数据集)；
+* [https://tianchi.aliyun.com/dataset](阿里天池数据集)；
+* [https://www.kesci.com/home/dataset](和鲸社区数据集)
+* [https://data.europa.eu/euodp/data/dataset](欧盟数据集)
