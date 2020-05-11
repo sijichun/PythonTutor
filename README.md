@@ -62,12 +62,12 @@
 
 这里列举了一些数据源，练习时可以使用。
 
-* [https://archive.ics.uci.edu/ml/datasets.php](UCI 提供的机器学习数据集)；
-* [https://github.com/awesomedata/awesome-public-datasets](GitHub上的一个数据集汇总)
-* [https://registry.opendata.aws](亚马逊数据集)；
-* [https://msropendata.com](微软数据集)
-* [https://toolbox.google.com/datasetsearch](Google的数据集搜索)；
-* [https://www.kaggle.com/datasets](Kaggle数据集)；
-* [https://tianchi.aliyun.com/dataset](阿里天池数据集)；
-* [https://www.kesci.com/home/dataset](和鲸社区数据集)
-* [https://data.europa.eu/euodp/data/dataset](欧盟数据集)
+* [UCI 提供的机器学习数据集](https://archive.ics.uci.edu/ml/datasets.php)；
+* [GitHub上的一个数据集汇总](https://github.com/awesomedata/awesome-public-datasets)
+* [亚马逊数据集](https://registry.opendata.aws)；
+* [微软数据集](https://msropendata.com)
+* [Google的数据集搜索](https://toolbox.google.com/datasetsearch)；
+* [Kaggle数据集](https://www.kaggle.com/datasets)；
+* [阿里天池数据集](https://tianchi.aliyun.com/dataset)；
+* [和鲸社区数据集](https://www.kesci.com/home/dataset)
+* [欧盟数据集](https://data.europa.eu/euodp/data/dataset)
