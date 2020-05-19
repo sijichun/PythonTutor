@@ -51,7 +51,7 @@
 
 * [T26_scikit_learn.ipynb](T26_scikit_learn.ipynb)：机器学习简介：scikit-learn；
 * [T27_clustering.ipynb](T27_clustering.ipynb)：聚类分析
-* [T28_regression_lasso.ipynb](T28_regression_lasso.ipynb)：回归与正则化（待补充）；
+* [T28_regression_lasso.ipynb](T28_regression_lasso.ipynb)：回归与正则化；
 * [T29_logistic_regression.ipynb](T29_logistic_regression.ipynb)： Logistic回归（待补充）；
 * [T30_tree_and_forest.ipynb](T30_tree_and_forest.ipynb)： 决策树与随机森林（待补充）；
 * [T31_torch.ipynb](T31_torch.ipynb)：神经网络：PyTorch（待补充）；
