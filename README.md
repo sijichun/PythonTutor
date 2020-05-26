@@ -50,24 +50,24 @@
 ## 机器学习
 
 * [T26_scikit_learn.ipynb](T26_scikit_learn.ipynb)：机器学习简介：scikit-learn；
-* [T27_clustering.ipynb](T27_clustering.ipynb)：聚类分析
+* [T27_clustering.ipynb](T27_clustering.ipynb)：聚类分析；
 * [T28_regression_lasso.ipynb](T28_regression_lasso.ipynb)：回归与正则化；
-* [T29_logistic_regression.ipynb](T29_logistic_regression.ipynb)： Logistic回归（待补充）；
+* [T29_logistic_regression.ipynb](T29_logistic_regression.ipynb)： Logistic回归；
 * [T30_tree_and_forest.ipynb](T30_tree_and_forest.ipynb)： 决策树与随机森林（待补充）；
 * [T31_torch.ipynb](T31_torch.ipynb)：神经网络：PyTorch（待补充）；
 * [T32_text_analytics.ipynb](T32_text_analytics.ipynb)： 文本分析入门；
-* [T33_reinforcement.ipynb](T33_reinforcement.ipynb)： 增强学习（待补充）。
+* [T33_reinforcement.ipynb](T33_reinforcement.ipynb)： 增强学习（待补充）；
 
 ## 常用数据集
 
 这里列举了一些数据源，练习时可以使用。
 
 * [UCI 提供的机器学习数据集](https://archive.ics.uci.edu/ml/datasets.php)；
-* [GitHub上的一个数据集汇总](https://github.com/awesomedata/awesome-public-datasets)
+* [GitHub上的一个数据集汇总](https://github.com/awesomedata/awesome-public-datasets)；
 * [亚马逊数据集](https://registry.opendata.aws)；
-* [微软数据集](https://msropendata.com)
+* [微软数据集](https://msropendata.com)；
 * [Google的数据集搜索](https://toolbox.google.com/datasetsearch)；
 * [Kaggle数据集](https://www.kaggle.com/datasets)；
 * [阿里天池数据集](https://tianchi.aliyun.com/dataset)；
-* [和鲸社区数据集](https://www.kesci.com/home/dataset)
-* [欧盟数据集](https://data.europa.eu/euodp/data/dataset)
+* [和鲸社区数据集](https://www.kesci.com/home/dataset)；
+* [欧盟数据集](https://data.europa.eu/euodp/data/dataset)。
