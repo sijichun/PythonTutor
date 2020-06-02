@@ -53,7 +53,7 @@
 * [T27_clustering.ipynb](T27_clustering.ipynb)：聚类分析；
 * [T28_regression_lasso.ipynb](T28_regression_lasso.ipynb)：回归与正则化；
 * [T29_logistic_regression.ipynb](T29_logistic_regression.ipynb)： Logistic回归；
-* [T30_tree_and_forest.ipynb](T30_tree_and_forest.ipynb)： 决策树与随机森林（待补充）；
+* [T30_tree_and_forest.ipynb](T30_tree_and_forest.ipynb)： 决策树与随机森林；
 * [T31_torch.ipynb](T31_torch.ipynb)：神经网络：PyTorch（待补充）；
 * [T32_text_analytics.ipynb](T32_text_analytics.ipynb)： 文本分析入门；
 * [T33_reinforcement.ipynb](T33_reinforcement.ipynb)： 增强学习（待补充）；
