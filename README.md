@@ -1,6 +1,6 @@
 # PythonTutor
 
-主要用于Python教学。
+主要用于Python教学。版权所有，请勿散播、抄袭。
 
 结构如下：
 
