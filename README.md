@@ -6,35 +6,35 @@
 
 结构如下：
 
-* [T-1_Errors.ipynb](T-1_Errors.ipynb)：本教程常见报错；
+* [Errors.ipynb](T-1_Errors.ipynb)：本教程常见报错；
 
 ## Python基础
 
-* [T0_begin.ipynb](T0_begin.ipynb)： Python的安装、开发环境等，以及Git（Hub）入门；
-* [T1_basic.ipynb](T1_basic.ipynb)： Python入门：数据类型和控制语句；
-* [T2_func_and_module.ipynb](T2_func_and_module.ipynb)： 函数和模块；
-* [T3_class.ipynb](T3_class.ipynb)： 面向对象编程；
+* [Begin.ipynb](T0_begin.ipynb)： Python的安装、开发环境等，以及Git（Hub）入门；
+* [Basic.ipynb](T1_basic.ipynb)： Python入门：数据类型和控制语句；
+* [Func_and_module.ipynb](T2_func_and_module.ipynb)： 函数和模块；
+* [Class.ipynb](T3_class.ipynb)： 面向对象编程；
 
 ## 字符串专题
 
-* [T4_string_and_file.ipynb](T4_string_and_file.ipynb)： 字符串和文件；
-* [T5_regex.ipynb](T5_regex.ipynb)： 正则表达式；
+* [String_and_file.ipynb](T4_string_and_file.ipynb)： 字符串和文件；
+* [Regex.ipynb](T5_regex.ipynb)： 正则表达式；
 
 ## 数据库与爬虫
 
-* [T6_sql.ipynb](T10_sql.ipynb)： Python与数据库交互、sqlite简介；
-* [T7_html_bs.ipynb](T11_html_bs.ipynb)： HTML语言简介、BeautifulSoup解析HTML；
-* [T8_flask_request_selenium.ipynb](T12_flask_request_selenium.ipynb)： 爬虫；
+* [SQL.ipynb](T10_sql.ipynb)： Python与数据库交互、sqlite简介；
+* [HTML_bs.ipynb](T11_html_bs.ipynb)： HTML语言简介、BeautifulSoup解析HTML；
+* [Flask_request_selenium.ipynb](T12_flask_request_selenium.ipynb)： 爬虫；
 
 ## 数值计算与数据管理
 
-* [T9_numpy_scipy_matplotlib.ipynb](T6_numpy_scipy_matplotlib.ipynb)：科学计算： Numpy+SciPy+Pandas+Matplotlib；
-* [T10_pandas.ipynb](T7_pandas.ipynb)：数据管理：Pandas；
+* [Numpy_scipy_matplotlib.ipynb](T6_numpy_scipy_matplotlib.ipynb)：科学计算： Numpy+SciPy+Pandas+Matplotlib；
+* [Pandas.ipynb](T7_pandas.ipynb)：数据管理：Pandas；
 
 ## 统计方法（待补充）
 
 * [T11_random.ipynb](T11_random.ipynb)：随机数生成（待补充）；
-* [T12_optimize.ipynb](T12_optimize.ipynb)：最优化方法（待补充）；
+* [Optimize.ipynb](T12_optimize.ipynb)：最优化方法（待补充）；
 * [T13_estimation.ipynb](T13_estimation.ipynb)：矩估计与极大似然估计（待补充）；
 * [T14_hypo_test.ipynb](T14_hypo_test.ipynb)：常用的假设检验（待补充）；
 * [T15_bayesian.ipynb](T15_bayesian.ipynb)：贝叶斯统计（待补充）；
@@ -51,14 +51,14 @@
 
 ## 机器学习
 
-* [T26_scikit_learn.ipynb](T26_scikit_learn.ipynb)：机器学习简介：scikit-learn；
-* [T27_clustering.ipynb](T27_clustering.ipynb)：聚类分析；
-* [T28_regression_lasso.ipynb](T28_regression_lasso.ipynb)：回归与正则化；
-* [T29_logistic_regression.ipynb](T29_logistic_regression.ipynb)： Logistic回归；
-* [T30_tree_and_forest.ipynb](T30_tree_and_forest.ipynb)： 决策树与随机森林；
-* [T31_torch.ipynb](T31_pytorch.ipynb)：PyTorch入门；
-* [T32_nn.ipynb](T32_nn.ipynb)神经网络与PyTorch（待补充）；
-* [T33_text_analytics.ipynb](T33_text_analytics.ipynb)： 文本分析入门；
+* [Scikit_learn.ipynb](T26_scikit_learn.ipynb)：机器学习简介：scikit-learn；
+* [Clustering.ipynb](T27_clustering.ipynb)：聚类分析；
+* [Regression_lasso.ipynb](T28_regression_lasso.ipynb)：回归与正则化；
+* [Logistic_regression.ipynb](T29_logistic_regression.ipynb)： Logistic回归；
+* [Tree_and_forest.ipynb](T30_tree_and_forest.ipynb)： 决策树与随机森林；
+* [Torch.ipynb](T31_pytorch.ipynb)：PyTorch入门；
+* [NN.ipynb](T32_nn.ipynb)神经网络与PyTorch（待补充）；
+* [Text_analytics.ipynb](T33_text_analytics.ipynb)： 文本分析入门；
 * [T34_reinforcement.ipynb](T34_reinforcement.ipynb)： 增强学习（待补充）；
 
 ## 常用数据集
