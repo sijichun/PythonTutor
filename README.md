@@ -53,6 +53,7 @@
 
 * [Scikit_learn.ipynb](Scikit_learn.ipynb)：机器学习简介：scikit-learn；
 * [Clustering.ipynb](Clustering.ipynb)：聚类分析；
+* [PCA_Manifold.ipynb](PCA_Manifold.ipynb)：主成分与流形学习
 * [Regression_lasso.ipynb](Regression_lasso.ipynb)：回归与正则化；
 * [Logistic_regression.ipynb](Logistic_regression.ipynb)： Logistic回归；
 * [Tree_and_forest.ipynb](Tree_and_forest.ipynb)： 决策树与随机森林；
