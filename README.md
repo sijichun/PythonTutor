@@ -58,7 +58,8 @@
 * [Logistic_regression.ipynb](Logistic_regression.ipynb)： Logistic回归；
 * [Tree_and_forest.ipynb](Tree_and_forest.ipynb)： 决策树与随机森林；
 * [Torch.ipynb](Torch.ipynb)：PyTorch入门；
-* [NN.ipynb](NN.ipynb)神经网络与PyTorch（待补充）；
+* [NN.ipynb](NN.ipynb)神经网络与PyTorch；
+* [RNN.ipynb](RNN.ipynb)循环神经网络；
 * [Text_analytics.ipynb](Text_analytics.ipynb)： 文本分析入门；
 * [Reinforcement.ipynb](Reinforcement.ipynb)： 增强学习（待补充）；
 
