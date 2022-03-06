@@ -14,6 +14,7 @@
 * [Basic.ipynb](Basic.ipynb)： Python入门：数据类型和控制语句；
 * [Func_and_module.ipynb](Func_and_module.ipynb)： 函数和模块；
 * [Class.ipynb](Class.ipynb)： 面向对象编程；
+* [Threads.ipynb](Threads.ipynb)：多线程编程
 
 ## 字符串专题
 
