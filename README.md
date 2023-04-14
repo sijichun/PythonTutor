@@ -61,6 +61,7 @@
 * [Torch.ipynb](Torch.ipynb)：PyTorch入门；
 * [NN.ipynb](NN.ipynb)神经网络与PyTorch；
 * [RNN.ipynb](RNN.ipynb)循环神经网络；
+* [CNN.ipynb](CNN.ipynb)卷积神经网络；
 * [Text_analytics.ipynb](Text_analytics.ipynb)： 文本分析入门；
 * [Reinforcement.ipynb](Reinforcement.ipynb)： 增强学习（待补充）；
 
