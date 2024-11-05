@@ -1,0 +1,312 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 示例-政策不确定性
+  use_icon_as_answer_icon: false
+kind: app
+version: 0.1.2
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        sourceType: start
+        targetType: tool
+      id: 1728998227211-source-1729052274958-target
+      source: '1728998227211'
+      sourceHandle: source
+      target: '1729052274958'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: tool
+        targetType: llm
+      id: 1729052274958-source-1729052337419-target
+      source: '1729052274958'
+      sourceHandle: source
+      target: '1729052337419'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: if-else
+      id: 1729052337419-source-1729052745581-target
+      source: '1729052337419'
+      sourceHandle: source
+      target: '1729052745581'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: end
+      id: 1729052745581-true-1729052786810-target
+      source: '1729052745581'
+      sourceHandle: 'true'
+      target: '1729052786810'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: llm
+      id: 1729052745581-45dbbea8-d7b7-48e0-8e55-c325084f9fb9-1729052801690-target
+      source: '1729052745581'
+      sourceHandle: 45dbbea8-d7b7-48e0-8e55-c325084f9fb9
+      target: '1729052801690'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: end
+      id: 1729052801690-source-1730802084242-target
+      source: '1729052801690'
+      sourceHandle: source
+      target: '1730802084242'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables: []
+      height: 54
+      id: '1728998227211'
+      position:
+        x: 80
+        y: 282
+      positionAbsolute:
+        x: 80
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        provider_id: webscraper
+        provider_name: webscraper
+        provider_type: builtin
+        selected: false
+        title: 网页爬虫
+        tool_configurations:
+          generate_summary: null
+          user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+            (KHTML, like Gecko) Chrome/100.0.1000.0 Safari/537.36
+        tool_label: 网页爬虫
+        tool_name: webscraper
+        tool_parameters:
+          url:
+            type: mixed
+            value: https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/company/rptid/782264742701/index.phtml
+        type: tool
+      height: 116
+      id: '1729052274958'
+      position:
+        x: 356.76905924059633
+        y: 282
+      positionAbsolute:
+        x: 356.76905924059633
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.2
+            top_k: 1
+            top_p: 0.5
+          mode: chat
+          name: qwen2.5:14b
+          provider: ollama
+        prompt_template:
+        - id: 000d491d-9939-4449-ada5-2504fd4a333f
+          role: system
+          text: 以下文本中是否能体现财政政策不确定性？请直接回答”是“或者”否“：{{#1729052274958.text#}}/
+        selected: false
+        title: LLM
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 98
+      id: '1729052337419'
+      position:
+        x: 637.3450854191819
+        y: 290.363066165585
+      positionAbsolute:
+        x: 637.3450854191819
+        y: 290.363066165585
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: is
+            id: 339a8a63-1019-4538-9b95-d6eb119e5d9b
+            value: 否
+            varType: string
+            variable_selector:
+            - '1729052337419'
+            - text
+          id: 'true'
+          logical_operator: and
+        - case_id: 45dbbea8-d7b7-48e0-8e55-c325084f9fb9
+          conditions:
+          - comparison_operator: contains
+            id: d5e397f0-6563-4e03-90c1-a48b43511aec
+            value: 是
+            varType: string
+            variable_selector:
+            - '1729052337419'
+            - text
+          id: 45dbbea8-d7b7-48e0-8e55-c325084f9fb9
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: 条件分支
+        type: if-else
+      height: 174
+      id: '1729052745581'
+      position:
+        x: 944.5136631725461
+        y: 239.77574685526753
+      positionAbsolute:
+        x: 944.5136631725461
+        y: 239.77574685526753
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs: []
+        selected: false
+        title: 结束 2
+        type: end
+      height: 54
+      id: '1729052786810'
+      position:
+        x: 1239.5560812032065
+        y: 210.03531118658503
+      positionAbsolute:
+        x: 1239.5560812032065
+        y: 210.03531118658503
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.1
+            top_p: 0.1
+          mode: chat
+          name: qwen2.5:14b
+          provider: ollama
+        prompt_template:
+        - id: 080597e7-2693-4e86-9296-2c916b9dd62b
+          role: system
+          text: '{{#1729052274958.text#}}/
+
+            请根据以上材料评价该公司受到财政政策不确定性的影响大小，1-10分，必须直接回答分数，不需要任何解释。'
+        selected: false
+        title: LLM 2
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 98
+      id: '1729052801690'
+      position:
+        x: 1239.5560812032065
+        y: 398.81631181596805
+      positionAbsolute:
+        x: 1239.5560812032065
+        y: 398.81631181596805
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1729052801690'
+          - text
+          variable: result
+        selected: false
+        title: 结束 2
+        type: end
+      height: 90
+      id: '1730802084242'
+      position:
+        x: 1543.5560812032065
+        y: 398.81631181596805
+      positionAbsolute:
+        x: 1543.5560812032065
+        y: 398.81631181596805
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: 233.6030744153802
+      y: 324.2996302322854
+      zoom: 0.6189505938700633

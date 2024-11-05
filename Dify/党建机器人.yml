@@ -1,0 +1,213 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 党建机器人
+  use_icon_as_answer_icon: false
+kind: app
+version: 0.1.2
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        sourceType: start
+        targetType: knowledge-retrieval
+      id: 1729701173288-source-1729701181731-target
+      source: '1729701173288'
+      sourceHandle: source
+      target: '1729701181731'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1729701181731-source-1729701232443-target
+      source: '1729701181731'
+      sourceHandle: source
+      target: '1729701232443'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: end
+      id: 1729701232443-source-1729701383143-target
+      source: '1729701232443'
+      sourceHandle: source
+      target: '1729701383143'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables:
+        - label: query
+          max_length: 100
+          options: []
+          required: true
+          type: text-input
+          variable: query
+      height: 90
+      id: '1729701173288'
+      position:
+        x: 80
+        y: 282
+      positionAbsolute:
+        x: 80
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - d8292151-7979-4393-93ca-e690f88df0f4
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: true
+          reranking_mode: reranking_model
+          reranking_model:
+            model: BAAI-bge-reranker-large
+            provider: huggingface_tei
+          score_threshold: null
+          top_k: 7
+          weights:
+            keyword_setting:
+              keyword_weight: 0.2
+            vector_setting:
+              embedding_model_name: qwen2:7b
+              embedding_provider_name: ollama
+              vector_weight: 0.8
+        query_variable_selector:
+        - '1729701173288'
+        - query
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索
+        type: knowledge-retrieval
+      height: 92
+      id: '1729701181731'
+      position:
+        x: 381.35908696759077
+        y: 282
+      positionAbsolute:
+        x: 381.35908696759077
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1729701181731'
+          - result
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.8
+            top_p: 0.7
+          mode: chat
+          name: qwen2.5:14b
+          provider: ollama
+        prompt_template:
+        - id: 81fd7c82-8dee-4b61-89cb-9f4b75ea779b
+          role: system
+          text: '根据如下以<begin>和<end>分割开的文档材料回答问题。
+
+
+            如果不知道可以直接回答不知道；如果对问题有疑问可以直接提问。
+
+
+            <begin>
+
+            {{#context#}}
+
+            <end>
+
+
+            回答如下问题：
+
+            {{#1729701173288.query#}}'
+        selected: false
+        title: LLM
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 98
+      id: '1729701232443'
+      position:
+        x: 686
+        y: 282
+      positionAbsolute:
+        x: 686
+        y: 282
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1729701232443'
+          - text
+          variable: answer
+        selected: false
+        title: 结束
+        type: end
+      height: 90
+      id: '1729701383143'
+      position:
+        x: 991
+        y: 282
+      positionAbsolute:
+        x: 991
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: -785.0850649285438
+      y: 106.79037175953835
+      zoom: 1.560274092478476

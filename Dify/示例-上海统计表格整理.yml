@@ -1,0 +1,206 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 示例-上海统计表格整理
+  use_icon_as_answer_icon: false
+kind: app
+version: 0.1.2
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        sourceType: start
+        targetType: code
+      id: 1730517995733-source-1730517999659-target
+      source: '1730517995733'
+      sourceHandle: source
+      target: '1730517999659'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: llm
+      id: 1730517999659-source-1730519785575-target
+      source: '1730517999659'
+      sourceHandle: source
+      target: '1730519785575'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: end
+      id: 1730519785575-source-1730519964592-target
+      source: '1730519785575'
+      sourceHandle: source
+      target: '1730519964592'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables:
+        - label: 网址
+          max_length: 100
+          options: []
+          required: true
+          type: text-input
+          variable: url
+      height: 90
+      id: '1730517995733'
+      position:
+        x: 80
+        y: 282
+      positionAbsolute:
+        x: 80
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        code: "HEADERS = {\n    'Accept':\n    'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',\n\
+          \    'Accept-Encoding':\n    'gzip, deflate',\n    'Accept-Language':\n\
+          \    'zh-CN,zh;q=0.9,zh-Hant;q=0.8,zh-Hans;q=0.7,en;q=0.6',\n    'Cache-Control':\n\
+          \    'max-age=0',\n    'Connection':\n    'keep-alive',\n    'Host':\n \
+          \   'tjj.sh.gov.cn',\n    'Upgrade-Insecure-Requests':\n    '1',\n    'User-Agent':\n\
+          \    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)\
+          \ Chrome/116.0.0.0 Safari/537.36'\n}\n\nimport requests\nfrom bs4 import\
+          \ BeautifulSoup\n\ndef main(arg1: str) -> dict:\n    r = requests.get(arg1,\
+          \ headers=HEADERS, timeout=10)\n    result = r.content.decode('utf-8', errors='ignore')\n\
+          \    bs = BeautifulSoup(result,\"html.parser\")\n    divs = bs.find_all('div',\
+          \ attrs={'class':'Article'})\n    result = divs[0].get_text()\n    return\
+          \ {\n        \"result\": result\n    }\n"
+        code_language: python3
+        desc: ''
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: true
+        title: 代码执行
+        type: code
+        variables:
+        - value_selector:
+          - '1730517995733'
+          - url
+          variable: arg1
+      height: 54
+      id: '1730517999659'
+      position:
+        x: 384
+        y: 282
+      positionAbsolute:
+        x: 384
+        y: 282
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0
+            top_p: 0.2
+          mode: chat
+          name: qwen2.5:14b
+          provider: ollama
+        prompt_template:
+        - id: 8fcd9b73-81b7-45db-92a5-4e71fbf9f96e
+          role: system
+          text: '根据<info>和</info>中间的信息，整理出表格：
+
+
+            <info>
+
+            {{#1730517999659.result#}}
+
+            </info>
+
+
+            要求表格以csv格式呈现。'
+        selected: false
+        title: LLM
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 98
+      id: '1730519785575'
+      position:
+        x: 724
+        y: 282
+      positionAbsolute:
+        x: 724
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1730519785575'
+          - text
+          variable: result
+        selected: false
+        title: 结束
+        type: end
+      height: 90
+      id: '1730519964592'
+      position:
+        x: 1036
+        y: 282
+      positionAbsolute:
+        x: 1036
+        y: 282
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: 168.5
+      y: 115
+      zoom: 1
